@@ -1,0 +1,12 @@
+@media (max-width: 46.1875em) {
+.previewcard {
+  width: 375px;
+}
+.card-section {
+  flex-direction: column;
+  margin: 96px 25px;
+}
+.button {
+  margin-top: 42px;
+}
+}

@@ -1,0 +1,107 @@
+/*------ Reste CSS ------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+:root {
+  --item-color-left: hsl(31, 77%, 52%);
+  --item-color-center: hsl(184, 100%, 22%);
+  --item-color-right: hsl(179, 100%, 13%);
+  --para-color: hsla(0, 0%, 100%, 0.75);
+  --background-color: hsl(0, 0%, 95%);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 15px;
+  font-family: 'Lexend Deca', sans-serif;
+  line-height: 1.6;
+}
+
+.flex {
+  display: flex;
+}
+
+
+/* --------- Main CSS -------------- */
+
+.previewcard {
+  margin: 0 auto;
+  width: 1440px;
+  background-color: var(--background-color);
+  justify-content: center;
+  align-items: center;
+}
+
+.card-section {
+  overflow: hidden;
+  border-radius: 10px;
+  margin: 96px 260px;
+  border: 10px;
+  width: 920px;
+}
+
+.preview--box {
+  flex: 1;
+  padding: 48px;
+  color: var(--para-color);
+}
+
+.preview--box .preview--header {
+  margin: 42px 0;
+  font-family: 'Big Shoulders Display', cursive;
+  font-size: 48px;
+  color: var(--background-color);
+  text-transform: uppercase;
+}
+
+.previewcard .first--card {
+  background-color: var(--item-color-left);
+}
+
+.previewcard .center--card {
+  background-color: var(--item-color-center);
+}
+
+.previewcard .last--card {
+  background-color: var(--item-color-right);
+}
+
+.preview--box .main--preview {
+  line-height: 2;
+}
+
+.button {
+  margin-top: 96px;
+  width: 148px;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--background-color);
+  border-radius: 25px;
+  text-transform: capitalize;
+  transition: all .3s;
+}
+
+.button-first-card {
+  color: var(--item-color-left);
+}
+
+.button-center-card {
+  color: var(--item-color-center);
+}
+
+.button-last-card {
+  color: var(--item-color-right);
+}
+
+.button:hover {
+  border: 2px solid var(--background-color);
+  background-color: inherit;
+  color: var(--background-color);
+  cursor: pointer;
+}
